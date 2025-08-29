@@ -22,7 +22,7 @@ def init_db():
 init_db()
 
 # ---------- Routes ----------
-@app.route("/", methods=["GET", "POST","HEAD"])
+@app.route("/", methods=["GET", "POST",])
 def home():
     error = None
     query = request.args.get("q", "").lower()
@@ -91,4 +91,5 @@ def update_sale(sale_id):
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
